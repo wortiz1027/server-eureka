@@ -8,7 +8,7 @@
 		<version>2.3.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>co.edu.javeriana</groupId>
+	<groupId>co.edu.javeriana.servers</groupId>
 	<artifactId>server-eureka</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>server-eureka</name>
@@ -64,6 +64,15 @@
 	</dependencyManagement>
 
 	<build>
+		<finalName>discovery-server</finalName>
+
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
