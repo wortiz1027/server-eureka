@@ -16,7 +16,7 @@ services:
     ports:
       - 9091:9091
     environment:
-      - CONFIG_SERVER: 'server-configuration-services'
+      - CONFIG_SERVER=http://server-configuration-services:9090
     networks:
       - ntw_backend
 networks:
