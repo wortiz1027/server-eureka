@@ -15,6 +15,7 @@ services:
     restart: always
     ports:
       - 9091:9091
+      - 6191:6191
     environment:
       - CONFIG_SERVER=http://server-configuration-services:9090
     networks:
